@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="row">
+  <div class="col-md-4">
+    {% include '_categories.html' %}
+
+    {% include '_new_category_form.html' %}
+  </div>
+  <div class="col-md-8">
+    <h1>Latest Items</h1>
+    {% for item in items %}
+      <ul>
+        <li><a href="{{ url_for('show_item', item_title = item.title, category_name = item.category.name) }}">{{ item.title }}</a> ({{ item.category.name }})</li>
+      </ul>
+    {% endfor %}
+  </div>
+</div>
+
+
+{% endblock %}

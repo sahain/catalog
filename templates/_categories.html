@@ -1,0 +1,6 @@
+<h1>Categories</h1>
+{% for cat in categories %}
+  <ul class="nav nav-pills nav-stacked nav-pills-stacked-example">
+    <li role="presentation"><a href="{{ url_for('category_items_index', category_name = cat.name) }}">{{cat.name}}</a></li>
+  </ul>
+{% endfor %}

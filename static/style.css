@@ -1,0 +1,12 @@
+body {
+  background-color: #dfdfdf;
+}
+
+.row {
+  background-color: #fff;
+}
+
+.user_img {
+  height: 80px;
+  width: 80px;
+}
