@@ -19,8 +19,6 @@ app = Flask(__name__)
 
 CLIENT_ID = json.loads(
     open('client_secrets.json', 'r').read())['web']['client_id']
-CLIENT_SECRET = json.loads(
-    open('client_secrets.json', 'r').read())['web']['client_secret']
 
 APPLICATION_NAME = "Catalog App"
 
